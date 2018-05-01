@@ -1,0 +1,42 @@
+name: Befele
+main: de.Danibe.Start
+version: 1.0
+commands:
+   test:
+      description: Test ob plugin Funktioniert
+      usage: /Test
+   ignite:
+      description: Zündet Spieler an
+      usage: /ignite <Spieler>
+      permission: Befehl.ignite
+      permission-message: Du hast keine Berechtigung hierzu!
+   kill:
+      description: Tötet den Spieler
+      usage: /Kill <Spieler>
+      permission: Befehl.kill
+      permission-message: Du hast keine Berechtigung hierzu!
+   gift:
+      description: vergiftet den Spieler
+      usage: /Gift <Spieler>
+      permission: Befehl.gift
+      permission-message: Du hast keine Berechtigung hierzu!
+   heilung:
+      description: Heilt den Spieler
+      usage: /heilung <Spieler>
+      permission: Befehl.heilung
+      permission-message: Du hast keine Berechtigung hierzu!
+   sethome:
+      description: setzt dein Zuhause
+      usage: /sethome <homeName>
+   home:
+      description: Teleportiert dich zu deinem Zuhause
+      usage: /home <homeName>
+      
+permissions:
+  befehl.*:
+    admin.
+      - befehl.ignite:true
+      - befehl.kill:true
+      - befehl.heilung:true
+      - befehl.gift:true
+      - befehl.sethome.multihomes:true
